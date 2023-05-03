@@ -31,7 +31,7 @@ numberRef.current.textContent=latest.toFixed(fix)
 
     })
   
-  }, [springValue,value])
+  }, [springValue,value,fix])
 
     return <span ref={numberRef}></span>
 }
@@ -42,7 +42,7 @@ const about = (props: Props) => {
   return (
     <>
     <Head>
-    <title>Roie's portfolio | About Page</title>
+    <title>Roie&apos;s portfolio | About Page</title>
     <meta key={'description'} name="description" content="About me page that shows you what my experience" />
     
   </Head>
@@ -53,12 +53,12 @@ const about = (props: Props) => {
         <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
 <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 '>
     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
-    <p className='font-medium'>Hi, I'm Roie, a fullstack web developer with a passion for creating beautiful, functional, 
+    <p className='font-medium'>Hi, I&apos;m Roie, a fullstack web developer with a passion for creating beautiful, functional, 
 and user-centered web apps.with keen intrest in node.js and react development. I am always looking for 
 a challenge.</p>
-    <p className=' my-4 font-medium'>I believe that design is about more than just making things look pretty – it's about solving problems and 
+    <p className=' my-4 font-medium'>I believe that design is about more than just making things look pretty – it&apos;s about solving problems and 
 creating intuitive, enjoyable experiences for users. </p>
-    <p className='font-medium'>I'm an hard-worker, fast and independent learner, team player, creative and highly motivated. I bring my commitment to design excellence and user-centered thinking to 
+    <p className='font-medium'>I&apos;m an hard-worker, fast and independent learner, team player, creative and highly motivated. I bring my commitment to design excellence and user-centered thinking to 
 every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.</p>
     </div>
     <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 xl:col-span-4 md:order-1 md:col-span-8 '>

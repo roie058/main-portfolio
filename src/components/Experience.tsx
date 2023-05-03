@@ -32,10 +32,10 @@ const {scrollYProgress}=    useScroll({layoutEffect:false,target:lineRef,offset:
             <motion.div style={{scaleY:scrollYProgress}}  ref={lineRef} className=' absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]' />
             <ul className=' w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Detailes address='Present' time='07/2022'  position='FullStack Developer (Freelance)' company='Net-Monitor' 
-                work="Developed Network traffic Analyzer UI software that parses and visualizes network traffic data, helping the network administrator to keep an eye on the source and destination IP's , to find thereasons for possible bottlenecks in bandwidth, using Electron React and Typescript." companyLink="https://www.net-monitor.net/"/>
+                work="Developed Network traffic Analyzer UI software that parses and visualizes network traffic data, helping the network administrator to keep an eye on the source and destination IP&apos;s , to find thereasons for possible bottlenecks in bandwidth, using Electron React and Typescript." companyLink="https://www.net-monitor.net/"/>
            <Detailes address='11/2022' time='06/2021'  position='Graphic Designer' company='Matzevot Leibovich' 
                 work="Designed 100+ unique headstones by request, adhering to typography basic rules. Successfully created vectorized icons and drawings using Graph tech pro studio for a range of
-                clients. Managed design projects from start to nish, ensuring all deadlines were met" companyLink="https://www.net-monitor.net/"/>
+                clients. Managed design projects from start to finish, ensuring all deadlines were met" companyLink="https://www.net-monitor.net/"/>
             </ul>
         </div>
 

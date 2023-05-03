@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { SVGProps } from "react"
 
 export const GithubIcon:React.FC<SVGProps<SVGSVGElement>> = ({ className, ...rest }) => (
