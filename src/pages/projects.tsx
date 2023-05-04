@@ -24,7 +24,7 @@ const FeaturedProject:React.FC<{type:string,title:string,summary:string,img:Stat
     return <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-dark shadow-2xl p-12 relative rounded-br-2xl lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
        <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 xs:w-full xs:rounded-[1.5rem]' />
         <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
-<FramerImage whileHover={{scale:1.05}} transition={{duration:0.2}} src={img} alt={title} className='w-full h-auto' priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw,50vw'/>
+<FramerImage whileHover={{scale:1.05}} transition={{duration:0.2}} src={img} alt={title} className='w-full h-auto' priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw'/>
         </Link>
         <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
             <span className='text-primary dark:text-primaryDark font-medium text-xl xs:text-base'>{type}</span>
@@ -33,8 +33,8 @@ const FeaturedProject:React.FC<{type:string,title:string,summary:string,img:Stat
         </Link>
         <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
         <div className='mt-2 flex items-center'>
-        <Link href={github} className='w-10' target='_blank'>
-            <GithubIcon/>
+        <Link id={'link ' + title}  href={github} className='w-10' target='_blank' aria-label={title + ' Git Hub Link'}  >
+            <GithubIcon />
         </Link>
         <Link href={link} target='_blank' className='bg-dark text-light ml-4 rounded-lg p-2 px-6 text-lg font-semibold border border-solid border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:border-light dark:hover:bg-dark dark:hover:text-light sm:px-4 sm:text-base  '>
             Visit Project
@@ -49,7 +49,7 @@ const Project:React.FC<{type:string,title:string,img:StaticImageData,link:string
     return <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:border-light dark:bg-dark p-6 relative xs:p-4'>
         <div className=' absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl md:-right-2 md:w-[101% xs:rounded-[1.5rem]] ' />
         <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-<FramerImage whileHover={{scale:1.05}} transition={{duration:0.2}} src={img} alt={title} className='w-full h-auto'/>
+<FramerImage whileHover={{scale:1.05}} transition={{duration:0.2}} src={img} alt={title} sizes='(max-width:768px) 100vw, (max-width:1200px) 33vw, 33vw' className='w-full h-auto'/>
         </Link>
         <div className='w-full flex flex-col items-start justify-between mt-4'>
             <span className='text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base'>{type}</span>
@@ -58,7 +58,7 @@ const Project:React.FC<{type:string,title:string,img:StaticImageData,link:string
         </Link>
       
         <div className='w-full mt-2 flex flex-row-reverse justify-between items-center'>
-        <Link href={github} className='w-8 md:w-6' target='_blank'>
+        <Link id={'link ' + title} href={github} className='w-8 md:w-10' target='_blank' aria-label={title + ' Git Hub Link'}>
             <GithubIcon/>
         </Link>
         <Link href={link} target='_blank' className='text-lg font-semibold underline md:text-base '>
