@@ -33,7 +33,7 @@ export default function Home() {
           <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>A full-stack developer, I am dedicated to turning ideas into Inovative Beautiful and Responsive web apps for any purpose. 
 Explore my latest projects, showcasing my expertise in React.js and web development</p>
 <div className='flex items-center self-start mt-2 lg:self-center'>
-  <Link className='flex items-center bg-dark text-light p-2.5 rounded-lg px-6 text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid  border-transparent hover:border-dark dark:bg-light dark:text-dark  dark:hover:bg-dark dark:hover:text-light dark:hover:border-light md:p-2 md:px-4 md:text-base   ' download={true} href={'/dummy.pdf'} target='_blank'>Resume 
+  <Link className='flex items-center bg-dark text-light p-2.5 rounded-lg px-6 text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid  border-transparent hover:border-dark dark:bg-light dark:text-dark  dark:hover:bg-dark dark:hover:text-light dark:hover:border-light md:p-2 md:px-4 md:text-base   ' download={true} href={"/Roi's Resume (fs).pdf"} target='_blank'>Resume 
   <LinkArrow className='w-6 ml-1'/>
   </Link>
   <Link href={'mailto:roie058@gmail.com'} className='ml-4 text-lg font-medium capitalize text-dark dark:text-light underline md:text-base'>Contact</Link>
