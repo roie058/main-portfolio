@@ -71,12 +71,12 @@ const NavBar = (props: NavProps) => {
 </nav>
 
 <nav className='flex items-center justify-center flex-wrap '>
-<CostumNavLink className='w-6 mr-3' whileTap={{scale:0.9}} whileHover={{y:-2}} href={'https://www.linkedin.com/in/roie-lebovich'} target='_blank'><LinkedInIcon /></CostumNavLink>
-<CostumNavLink className='w-6 mx-3' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.instagram.com/roie_leb'} target='_blank'><InstagramIcon/></CostumNavLink>
-<CostumNavLink className='w-6 mx-3' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://github.com/roie058'} target='_blank'><GithubIcon className='dark:text-light'/></CostumNavLink>
-<CostumNavLink className='w-6 mx-3' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.facebook.com/profile.php?id=100000664470842'} target='_blank'><FacebookIcon className='dark:bg-light rounded-lg'/></CostumNavLink>
+<CostumNavLink id='linkedInLink' aria-label='linkedInLink' className='w-6 mr-3' whileTap={{scale:0.9}} whileHover={{y:-2}} href={'https://www.linkedin.com/in/roie-lebovich'} target='_blank'><LinkedInIcon /></CostumNavLink>
+<CostumNavLink id='InstagramLink' aria-label='InstagramLink' className='w-6 mx-3' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.instagram.com/roie_leb'} target='_blank'><InstagramIcon/></CostumNavLink>
+<CostumNavLink id='gitHubLink' aria-label='gitHubLink' className='w-6 mx-3' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://github.com/roie058'} target='_blank'><GithubIcon className='dark:text-light'/></CostumNavLink>
+<CostumNavLink id='facebookLink' aria-label='facebookLink' className='w-6 mx-3' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.facebook.com/profile.php?id=100000664470842'} target='_blank'><FacebookIcon className='dark:bg-light rounded-lg'/></CostumNavLink>
 
-<button className={`w-6 ml-4 flex items-center justify-center rounded-full p-1 ${mode==='light'?'bg-dark text-light':"bg-light text-dark"}`} onClick={()=>{setMode((mode:string)=> mode==="dark"?'light':'dark')}}>
+<button id='changeTheme' name='changeTheme' aria-label='change the theme of the site' className={`w-6 ml-4 flex items-center justify-center rounded-full p-1 ${mode==='light'?'bg-dark text-light':"bg-light text-dark"}`} onClick={()=>{setMode((mode:string)=> mode==="dark"?'light':'dark')}}>
     {mode==='dark' ?<SunIcon className='fill-dark'/>: <MoonIcon className='fill-dark'/> }
 </button>
 
@@ -95,10 +95,10 @@ const NavBar = (props: NavProps) => {
 </nav>
 
 <nav className='flex items-center justify-center flex-wrap mt-2 '>
-<CostumNavLink className='w-6 mr-3 sm:mx-1' whileTap={{scale:0.9}} whileHover={{y:-2}} href={'https://www.linkedin.com/in/roie-lebovich'} target='_blank'><LinkedInIcon /></CostumNavLink>
-<CostumNavLink className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.instagram.com/roie_leb'} target='_blank'><InstagramIcon  /></CostumNavLink>
-<CostumNavLink className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://github.com/roie058'} target='_blank'><GithubIcon className='dark:bg-dark bg-light dark:text-light rounded-full'/></CostumNavLink>
-<CostumNavLink className='w-6 ml-3 sm:mx-1' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.facebook.com/profile.php?id=100000664470842'} target='_blank'><FacebookIcon className='bg-light rounded-lg'/></CostumNavLink>
+<CostumNavLink id='linkedInLink' aria-label='linkedInLink' className='w-6 mr-3 sm:mx-1' whileTap={{scale:0.9}} whileHover={{y:-2}} href={'https://www.linkedin.com/in/roie-lebovich'} target='_blank'><LinkedInIcon /></CostumNavLink>
+<CostumNavLink id='InstagramLink' aria-label='InstagramLink' className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.instagram.com/roie_leb'} target='_blank'><InstagramIcon  /></CostumNavLink>
+<CostumNavLink id='gitHubLink' aria-label='gitHubLink' className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://github.com/roie058'} target='_blank'><GithubIcon className='dark:bg-dark bg-light dark:text-light rounded-full'/></CostumNavLink>
+<CostumNavLink id='facebookLink' aria-label='facebookLink' className='w-6 ml-3 sm:mx-1' whileTap={{scale:0.9}}  whileHover={{y:-2}} href={'https://www.facebook.com/profile.php?id=100000664470842'} target='_blank'><FacebookIcon className='bg-light rounded-lg'/></CostumNavLink>
 
 <button className={`w-6 ml-3 sm:ml-1 flex items-center justify-center rounded-full p-1 ${mode==='light'?'bg-dark text-light':"bg-light text-dark"}`} onClick={()=>{setMode((mode:string)=> mode==="dark"?'light':'dark')}}>
     {mode==='dark' ?<SunIcon className='fill-dark'/>: <MoonIcon className='fill-dark'/> }
