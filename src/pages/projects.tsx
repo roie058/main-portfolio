@@ -89,7 +89,7 @@ const projects = (props: Props) => {
 <Project img={BurgerPrincePic} type='Featured Project' github='/' link='https://burger-prince.netlify.app' title='Burger Prince'/>
 </div>
 <div className='col-span-6 sm:col-span-12'>
-<Project img={PortfolioPic} type='Featured Project' github='https://github.com/roie058/portfolio' link='https://roie-leibovich.vercel.app' title='Personal Website'/>
+<Project img={PortfolioPic} type='Featured Project' github='https://github.com/roie058/portfolio' link='https://roie-leibovich-portfolio.vercel.app' title='Personal Website'/>
 </div>
 <div className='col-span-12'>
 <FeaturedProject img={FoodsterPic} type='Featured Project' github='https://github.com/roie058/foodster' link='https://foodster-il.onrender.com' summary='discover restaurants around you add restaurants and rate others including claster map reviews and authentication' title='Foodster app'/>
