@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Logo from '../brand/Logo'
 import { useRouter } from 'next/router'
 import { FacebookIcon, GithubIcon, InstagramIcon, LinkedInIcon, MoonIcon, SunIcon } from '../brand/Icons'
@@ -66,8 +66,6 @@ const NavBar = (props: NavProps) => {
     <CustomLink href={'/projects'} title='Projects' className='mx-4 '/>
     <CustomLink href={'/about'} title='About' className='ml-4 '/>
 
-
-  
 </nav>
 
 <nav className='flex items-center justify-center flex-wrap '>
@@ -89,9 +87,6 @@ const NavBar = (props: NavProps) => {
     <CustomMobileLink  href={'/'} title='home'  toggle={handleClick}/>
     <CustomMobileLink href={'/projects'} title='Projects'  toggle={handleClick}/>
     <CustomMobileLink href={'/about'} title='About'  toggle={handleClick}/>
-  
-
-  
 </nav>
 
 <nav className='flex items-center justify-center flex-wrap mt-2 '>

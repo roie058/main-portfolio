@@ -6,6 +6,7 @@ import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import TravelBuddyPic from '../../public/images/travelbuddy.jpg'
+import WebLockPic from '../../public/images/weblock.png'
 import PortfolioPic from '../../public/images/portfolio.jpg'
 import FoodsterPic from '../../public/images/foodster.jpg'
 import MatzevotPic from '../../public/images/matzevot.jpg'
@@ -82,17 +83,21 @@ const projects = (props: Props) => {
         <Layout className='pt-16'>
             <AnimatedText text='Imagination Trumps Knowledge!' className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
             <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0' >
+
 <div className='col-span-12'>
-    <FeaturedProject img={TravelBuddyPic} type='Featured Project-NEW!' github='https://github.com/roie058/travel-buddy' link='https://travel-buddy-one.vercel.app' summary="Fully working travel advisor app with interacrive map working with many travel and weather api&apos;s to help you to plan the perfect trip" title='Travel Buddy'/>
+    <FeaturedProject img={TravelBuddyPic} type='Featured Project-NEW!' github='https://github.com/roie058/travel-buddy' link='https://www.travelbuddy.website/' summary="Fully working travel advisor app with interacrive map working with many travel and weather api&apos;s to help you to plan the perfect trip" title='Travel Buddy'/>
+</div>
+<div className='col-span-12'>
+<FeaturedProject img={WebLockPic} type='Featured Project-NEW!' github='https://github.com/roie058/web-lock' link='/weblock' summary="This tool offers a seamless solution for increasing productivity and minimizing distractions while browsing the web. With just a few clicks, you can block access to specific websites for a designated period, allowing you to stay focused on your tasks without being tempted by time-consuming or distracting sites. " title='WebLock (browser extension)'/>
+</div>
+<div className='col-span-12'>
+<FeaturedProject img={FoodsterPic} type='Featured Project' github='https://github.com/roie058/foodster' link='https://foodster-il.onrender.com' summary='discover restaurants around you add restaurants and rate others including claster map reviews and authentication' title='Foodster app'/>
 </div>
 <div className='col-span-6 sm:col-span-12'>
 <Project img={BurgerPrincePic} type='Featured Project' github='/' link='https://burger-prince.netlify.app' title='Burger Prince'/>
 </div>
 <div className='col-span-6 sm:col-span-12'>
 <Project img={PortfolioPic} type='Featured Project' github='https://github.com/roie058/portfolio' link='https://roie-leibovich-portfolio.vercel.app' title='Personal Website'/>
-</div>
-<div className='col-span-12'>
-<FeaturedProject img={FoodsterPic} type='Featured Project' github='https://github.com/roie058/foodster' link='https://foodster-il.onrender.com' summary='discover restaurants around you add restaurants and rate others including claster map reviews and authentication' title='Foodster app'/>
 </div>
 <div className='col-span-6 sm:col-span-12'>
 <Project img={MatzevotPic} type='Featured Project' github='https://github.com/roie058/matzevot-leb' link='https://matzevot-leb.vercel.app' title='Matzevot Leibovich Website'/>
